@@ -1,0 +1,27 @@
+{
+  "name": "budget-app",
+  "version": "1.0.0",
+  "description": "A budget tracker application with online as well as offline functionality",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lite-server": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
+  },
+  "author": "Connie Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
+  },
+  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "lite-server": "^2.5.3",
+    "mongoose": "^5.5.15",
+    "morgan": "^1.9.1"
+  }
+}
