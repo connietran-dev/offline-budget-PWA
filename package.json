@@ -1,13 +1,14 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
-  "description": "A budget tracker application with online as well as offline functionality",
+  "description": "A progressive web application with online as well as offline functionality for budget tracking",
   "main": "server.js",
   "scripts": {
+    "prestart": "npm run webpack",
+    "webpack": "webpack",
     "start": "node server.js",
     "lite-server": "lite-server",
-    "watch": "nodemon server.js",
-    "build": "webpack --watch"
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "nodemon": "^2.0.4",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-pwa-manifest": "^4.2.0"
   }
 }
