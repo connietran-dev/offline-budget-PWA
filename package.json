@@ -7,7 +7,6 @@
     "preinstall": "npx npm-force-resolutions",
     "prestart": "npm run webpack",
     "webpack": "webpack",
-    "build": "webpack -p",
     "start": "node server.js",
     "lite-server": "lite-server",
     "watch": "nodemon server.js"
