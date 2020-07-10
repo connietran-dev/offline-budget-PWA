@@ -4,6 +4,7 @@
   "description": "A progressive web application with online as well as offline functionality for budget tracking",
   "main": "server.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "prestart": "npm run webpack",
     "webpack": "webpack",
     "start": "node server.js",
@@ -24,13 +25,17 @@
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "lite-server": "^2.5.3",
-    "mongoose": "^5.5.15",
+    "mongoose": "^5.9.23",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "minimist": "^1.2.5",
     "nodemon": "^2.0.4",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-pwa-manifest": "^4.2.0"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
   }
 }
