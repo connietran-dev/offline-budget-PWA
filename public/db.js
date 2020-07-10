@@ -25,10 +25,6 @@ request.onsuccess = function (event) {
     }
 };
 
-// Whenever app comes online, check indexedDB and POST "pending" records to MongoDB
-window.addEventListener("online", checkDatabase);
-
-
 function checkDatabase() {
     // Open a transaction on your pending db
     const transaction = db.transaction(["pending"], "readwrite");
@@ -76,3 +72,8 @@ function saveRecord(record) {
     // And add the transaction record (name, value, date) to your store
     store.add(record);
 }
+
+module.exports = {
+    checkDatabase,
+    saveRecord
+};
