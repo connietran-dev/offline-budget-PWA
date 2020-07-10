@@ -2,10 +2,16 @@ const FILES_TO_CACHE = [
     "/",
     "/index.html",
     "/styles.css",
-    "/dist/bundle.js",
-    "/manifest.webmanifest",
-    "/icons/icon-192x192.png",
-    "/icons/icon-512x512.png",
+    "/dist/index.bundle.js",
+    "/dist/manifest.json",
+    "/dist/icon_72x72.png",
+    "/dist/icon_96x96.png",
+    "/dist/icon_128x128.png",
+    "/dist/icon_144x144.png",
+    "/dist/icon_152x152.png",
+    "/dist/icon_192x192.png",
+    "/dist/icon_384x384.png",
+    "/dist/icon_512x512.png"
   ];
    
   const CACHE_NAME = "static-cache-v2";

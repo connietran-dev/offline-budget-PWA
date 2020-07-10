@@ -2,33 +2,31 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
 const config = {
-  entry: "./public/index.js",
+  mode: "production",
+  entry: {
+    index: "./public/index.js"
+  },
   output: {
     path: __dirname + "/public/dist",
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
   },
-  mode: "production",
   plugins: [
     new WebpackPwaManifest({
       // the name of the generated manifest file
       filename: "manifest.json",
-
       // we aren't using webpack to generate our html so we
       // set inject to false
       inject: false,
-
       // set fingerprints to `false` to make the names of the generated
       // files predictable making it easier to refer to them in our code
       fingerprints: false,
-
       name: "IndexBudget Tracker PWA",
       short_name: "Index Budget",
       theme_color: "#e6f542",
       background_color: "#e6f542",
       start_url: "/",
       display: "fullscreen",
-      "orientation": "landscape",
-
+      orientation: "landscape",
       icons: [
         {
           src: path.resolve(
@@ -41,7 +39,22 @@ const config = {
         }
       ]
     })
-  ]
+  ],
+  // For files ending with .js, we will use babel-loader with preset-env
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
+      }
+    ]
+  }
 };
 
 module.exports = config;
