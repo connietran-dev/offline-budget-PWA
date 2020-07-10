@@ -14,7 +14,7 @@ request.onerror = function (event) {
     console.log("Whoops! " + event.target.errorCode);
 };
 
-// When indexedDB is successfully created,
+// When indexedDB is successfully connected,
 request.onsuccess = function (event) {
     db = event.target.result;
 

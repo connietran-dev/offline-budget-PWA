@@ -1,0 +1,21 @@
+{
+  "short_name": "Index Budget",
+  "name": "Index Budget Tracker PWA",
+  "icons": [
+    {
+      "src": "./icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#884efb",
+  "theme_color": "#884efb"
+}
