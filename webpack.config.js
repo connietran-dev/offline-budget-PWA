@@ -54,7 +54,11 @@ const config = {
         }
       }
     ]
-  }
+  },
+  devServer: {
+    contentBase: './public',
+    publicPath: '/dist'
+ }
 };
 
 module.exports = config;
