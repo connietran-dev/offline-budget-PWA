@@ -1,4 +1,4 @@
-# Budget Tracker: Progressive Web App
+# IndexBudget Tracker: Progressive Web App
 
 ## Web optimization with IndexedDB & Webpack
 
@@ -15,7 +15,7 @@ We were tasked with adding offline access and functionality to a Budget Tracker 
 
 In this application, you are able to add expenses and deposits to your budget with or without a connection. When entering transactions when the app is offline, the transactions will populate the total when the application is brought back online.
 
-The application is deployed to Heroku and can be installed as a progressive web app through your browser here: [indexbudget.herokuapp.com](https://indexbudget.herokuapp.com)
+The application is deployed to Heroku and can be installed as a progressive web app through your browser here: [IndexBudget.herokuapp.com](https://indexbudget.herokuapp.com)
 
 This application is built with the following technologies:
 
