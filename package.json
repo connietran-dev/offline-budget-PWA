@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
-    "prestart": "npm run webpack",
     "webpack": "webpack",
     "start": "node server.js",
     "dev": "webpack-dev-server --hot --inline",
