@@ -23,7 +23,7 @@
   "homepage": "https://github.com/connietran-dev/offline-budget-PWA#readme",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lite-server": "^2.5.3",
     "mongoose": "^5.9.23",
     "morgan": "^1.9.1"
